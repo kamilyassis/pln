@@ -1,0 +1,10 @@
+2026-03-25_scraping_g1/data
+2026-03-25_scraping_g1/downloaded_files
+2026-03-25_scraping_g1/latest_logs
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.env
+.DS_Store
