@@ -1,0 +1,4 @@
+
+
+python agno_labeler.py -i data/result/conexao-treated-sentences.csv -o data/result/conexao-labels-full-4o-mini.csv -m gpt-4o-mini -b 5 -p prompt/semeval-label-prompt.txt
+python agno_labeler.py -i data/result/g1-treated-texts.csv -o data/result/g1-labels-full-4o-mini.csv -m gpt-4o-mini -b 5 -p prompt/semeval-label-prompt.txt
