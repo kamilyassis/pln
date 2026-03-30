@@ -143,7 +143,7 @@ if __name__ == "__main__":
     elif 'sentence' in df.columns:
         sentences = df['sentence'].tolist()
     else:
-        print("Error: No 'text' or 'sentence' column found in the input CSV.")
+        raise ValueError("No 'text' or 'sentence' column found in the input CSV.")
 
     df_out = pd.read_csv(args.output_file) if os.path.exists(args.output_file) else pd.DataFrame(columns=['sentence', 'label', 'justification'])
 
