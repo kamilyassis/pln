@@ -1,0 +1,28 @@
+threading.py:1030:SB
+--------------------------------------------------------------------
+Last Page: https://g1.globo.com/fato-ou-fake/noticia/2026/03/20/e-fake-que-video-de-bolsonaro-deitado-em-leito-de-uti-seja-recente-imagem-foi-registrada-apos-facada-em-2018.ghtml
+ Duration: 9.33s
+  Browser: Chrome 136.0.7103.59
+   Driver: chromedriver 136.0.7103.113
+Timestamp: 1774483488  (Unix Timestamp)
+     Date: Wednesday, 25 March 2026
+     Time: 9:04:48 PM  (-03, UTC-03:00)
+--------------------------------------------------------------------
+Traceback:
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3577, in run_code
+    await eval(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_30951/2947221029.py", line 182, in <module>
+    await scraper.run(urls[:10])  # Test with first 100; remove slice for all
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_30951/2947221029.py", line 155, in run
+    batch_parsed = await self.process_batch(batch_urls)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_30951/2947221029.py", line 115, in process_batch
+    html_results = await asyncio.gather(*scrape_tasks, return_exceptions=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_30951/2947221029.py", line 44, in scrape_with_delay
+    await asyncio.sleep(delay)
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+Exception: 

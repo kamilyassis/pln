@@ -1,0 +1,34 @@
+  File .py:198:SB
+--------------------------------------------------------------------
+Last Page: https://g1.globo.com/df/distrito-federal/eleicoes/2022/noticia/2022/09/07/veja-o-que-e-fato-ou-fake-na-entrevista-de-leandro-grass-para-o-g1.ghtml
+ Duration: 7.75s
+  Browser: Chrome 136.0.7103.59
+   Driver: chromedriver 136.0.7103.113
+Timestamp: 1774480512  (Unix Timestamp)
+     Date: Wednesday, 25 March 2026
+     Time: 8:15:12 PM  (-03, UTC-03:00)
+--------------------------------------------------------------------
+Traceback:
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_30951/3686475916.py", line 43, in <module>
+    html = scrape_article(url)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_30951/3686475916.py", line 12, in scrape_article
+    with SB(
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/seleniumbase/plugins/sb_manager.py", line 1407, in SB
+    sb.setUp()
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/seleniumbase/fixtures/base_case.py", line 15672, in setUp
+    self.__activate_virtual_display_as_needed()
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/seleniumbase/fixtures/base_case.py", line 14688, in __activate_virtual_display_as_needed
+    self.__activate_virtual_display()
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/seleniumbase/fixtures/base_case.py", line 14632, in __activate_virtual_display
+    import pyautogui
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/pyautogui/__init__.py", line 246, in <module>
+    import mouseinfo
+  File "/home/erlo/.localvenv/lib/python3.12/site-packages/mouseinfo/__init__.py", line 280, in <module>
+    sys.exit('NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev')
+Exception: NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
